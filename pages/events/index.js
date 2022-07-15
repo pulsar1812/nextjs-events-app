@@ -6,8 +6,6 @@ import EventSearch from '../../components/events/EventSearch';
 import { getAllEvents } from '../../helpers/api-util';
 
 export default function AllEventsPage({ events }) {
-  console.log(events);
-
   const router = useRouter();
 
   const findEventsHandler = (year, month) => {

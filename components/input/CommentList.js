@@ -1,6 +1,6 @@
 import styles from './CommentList.module.css';
 
-function CommentList({ items }) {
+export default function CommentList({ items }) {
   return (
     <ul className={styles.comments}>
       {/* Render list of comments - fetched from API */}
@@ -15,5 +15,3 @@ function CommentList({ items }) {
     </ul>
   );
 }
-
-export default CommentList;

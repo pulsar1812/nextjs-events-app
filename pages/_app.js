@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import { NotificationProvider } from '../store/NotificationContext';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <NotificationProvider>
       <Layout>
@@ -21,5 +21,3 @@ function MyApp({ Component, pageProps }) {
     </NotificationProvider>
   );
 }
-
-export default MyApp;

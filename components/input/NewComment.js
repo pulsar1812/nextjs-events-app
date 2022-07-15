@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import styles from './NewComment.module.css';
 
-function NewComment({ onAddComment }) {
+export default function NewComment({ onAddComment }) {
   const [isInvalid, setIsInvalid] = useState(false);
 
   const emailInputRef = useRef();
@@ -56,5 +56,3 @@ function NewComment({ onAddComment }) {
     </form>
   );
 }
-
-export default NewComment;

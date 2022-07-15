@@ -1,6 +1,6 @@
 import styles from './LogisticsItem.module.css';
 
-function LogisticsItem(props) {
+export default function LogisticsItem(props) {
   const { icon: Icon } = props;
 
   return (
@@ -12,5 +12,3 @@ function LogisticsItem(props) {
     </li>
   );
 }
-
-export default LogisticsItem;

@@ -5,7 +5,7 @@ import NewComment from './NewComment';
 import NotificationContext from '../../store/NotificationContext';
 import styles from './Comments.module.css';
 
-function Comments({ eventId }) {
+export default function Comments({ eventId }) {
   const [showComments, setShowComments] = useState(false);
   const [comments, setComments] = useState([]);
   const [isFetchingComments, setIsFetchingComments] = useState(false);
@@ -78,5 +78,3 @@ function Comments({ eventId }) {
     </section>
   );
 }
-
-export default Comments;
